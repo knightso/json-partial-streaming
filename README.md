@@ -48,7 +48,7 @@ w := writer.New(writerToOutput)
 **Prepare struct.**
 
 ```go
-// prepare newValue
+// prepare large Value
 // key can be any string(even empty), but it must be unique.
 pv, err := w.NewValue("Children", func(w io.Writer) error {
   // you can handle their encoding by yourself.
